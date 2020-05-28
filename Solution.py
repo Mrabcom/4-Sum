@@ -1,8 +1,8 @@
 
 class Solution(object):
     def fourSum(self, nums, target):
-        if nums == []:
-            return nums
+        if len(nums) < 4:
+            return []
         nums.sort()
         element = []
         wholeSet = []
